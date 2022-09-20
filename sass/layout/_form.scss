@@ -20,12 +20,23 @@
     justify-content: space-between;
     font-size: 1.1rem;
     margin: 20px 0px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    label {
+      font-size: 1.1rem;
+    }
     input {
       width: 60%;
       border: none;
       border-radius: 8px;
       height: 2em;
       font-family: inherit;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-top: 20px;      
+      }
       &:focus {
         outline: rgb(246, 158, 173) solid 2px;
       }
@@ -40,6 +51,9 @@
       border: none;
       font-family: inherit;
       width: 80%;
+      @media screen and (max-width: 768px) {
+        width: 100%;        
+      }
       &:focus {
         outline: rgb(246, 158, 173) solid 2px;
       }
@@ -55,6 +69,9 @@
     font-family: inherit;
     min-height: fit-content;
     padding: 10px;
+    @media screen and (max-width: 768px) {
+      width: 100%;        
+    }
     cursor: pointer;
     &:hover {
       background-color: rgba(255, 192, 203, 0.767);

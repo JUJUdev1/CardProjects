@@ -154,13 +154,32 @@ a {
 h2 {
   font-size: 2rem;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 
 h3 {
   font-size: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
 
 h2, h3 {
   text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
 }
 
 .projects {
@@ -221,12 +240,27 @@ h2, h3 {
   font-size: 1.1rem;
   margin: 20px 0px;
 }
+@media screen and (max-width: 768px) {
+  .new_project-form_input-group {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.new_project-form_input-group label {
+  font-size: 1.1rem;
+}
 .new_project-form_input-group input {
   width: 60%;
   border: none;
   border-radius: 8px;
   height: 2em;
   font-family: inherit;
+}
+@media screen and (max-width: 768px) {
+  .new_project-form_input-group input {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .new_project-form_input-group input:focus {
   outline: rgb(246, 158, 173) solid 2px;
@@ -242,6 +276,11 @@ h2, h3 {
   font-family: inherit;
   width: 80%;
 }
+@media screen and (max-width: 768px) {
+  .new_project-form_input-group_textarea textarea {
+    width: 100%;
+  }
+}
 .new_project-form_input-group_textarea textarea:focus {
   outline: rgb(246, 158, 173) solid 2px;
 }
@@ -256,6 +295,11 @@ h2, h3 {
   min-height: fit-content;
   padding: 10px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .new_project-button {
+    width: 100%;
+  }
 }
 .new_project-button:hover {
   background-color: rgba(255, 192, 203, 0.767);
