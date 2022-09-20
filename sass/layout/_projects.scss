@@ -1,0 +1,31 @@
+.projects {
+   width: 80%;
+   margin: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    border: 2px solid rgb(246, 158, 173);
+    border-radius: 10px;
+    margin: 20px 0px;
+    flex-grow: 1;
+    padding: 10px;
+    &_img {
+        width: 200px;
+        margin: 2%;
+    }
+    &_text {
+        text-align: center;
+    }
+}

@@ -1,0 +1,50 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project Card</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="projects" class="projects">
+      <h2 class="projects_title">Mes Projets</h2>
+      <section id="cards" class="cards">
+        <div class="card">
+          <h3 class="card_title">Mon Premier Projet JavaScript</h3>
+          <img class="card_img" src="./images/19199360-1024x683.jpeg" alt="images du logo JavaScript">
+          <p class="card_text">Ce projet JavaScript est un site portfolio de tout mes projets sous forme de cartes </p>
+        </div>
+        <div class="card">
+          <h3 class="card_title">Mon Premier Projet HTML/CSS</h3>
+          <img class="card_img" src="./images/free-template-html.jpeg" alt="">
+          <p class="card_text">Ce projet HTML/CSS est un site de voyage </p>
+        </div>
+        <div class="card">
+          <h3 class="card_title">Mon Premier Projet Animations CSS avec SASS</h3>
+          <img class="card_img" src="./images/1200px-Sass_Logo_Color.svg.png" alt="">
+          <p class="card_text">Ce projet SASS est un site de commande de repas en ligne </p>
+        </div>
+      </section>
+    </section>
+    
+    <section id="new_project" class="new_project">
+      <h2 class="new_project-title">Ajouter un projet a mon portfolio</h2>
+      <form id="new_project-form" class="new_project-form">
+        <div class="new_project-form_input-group">
+          <label for="project-title">Titre du projet</label>
+          <input type="text" id="project-title" name="project-title" />
+        </div>
+        <div class="new_project-form_input-group">
+          <label for="project-img_link">Lien vers une image</label>
+          <input type="text" id="project-img_link" name="project-img_link" />
+        </div>
+        <div class="new_project-form_input-group new_project-form_input-group_textarea">
+          <label for="project-text">Description du projet</label>
+          <textarea type="text" id="project-text" name="project-text" rows="10" ></textarea>
+        </div>
+        <button class="new_project-button" type="submit">Créer le projet</button>
+      </form>
+    </section>
+  </body>
+</html>

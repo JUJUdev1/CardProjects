@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px 0px 50px 0px;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.projects {
+  width: 80%;
+  margin: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  border: 2px solid rgb(246, 158, 173);
+  border-radius: 10px;
+  margin: 20px 0px;
+  flex-grow: 1;
+  padding: 10px;
+}
+.card_img {
+  width: 200px;
+  margin: 2%;
+}
+.card_text {
+  text-align: center;
+}
+
+.new_project {
+  margin: 100px auto 0px auto;
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px 50px 50px 50px;
+  background-color: rgba(255, 192, 203, 0.767);
+}
+@media screen and (max-width: 768px) {
+  .new_project {
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+.new_project-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  font-size: 1.1rem;
+}
+.new_project-form_input-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin: 20px 0px;
+}
+.new_project-form_input-group input {
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  height: 2em;
+  font-family: inherit;
+}
+.new_project-form_input-group input:focus {
+  outline: rgb(246, 158, 173) solid 2px;
+}
+.new_project-form_input-group_textarea {
+  flex-direction: column;
+  align-items: center;
+}
+.new_project-form_input-group_textarea textarea {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+  width: 80%;
+}
+.new_project-form_input-group_textarea textarea:focus {
+  outline: rgb(246, 158, 173) solid 2px;
+}
+.new_project-button {
+  width: 50%;
+  margin: 20px auto;
+  background-color: rgb(246, 158, 173);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-family: inherit;
+  min-height: fit-content;
+  padding: 10px;
+  cursor: pointer;
+}
+.new_project-button:hover {
+  background-color: rgba(255, 192, 203, 0.767);
+}
+
+/*# sourceMappingURL=style.css.map */
